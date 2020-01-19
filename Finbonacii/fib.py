@@ -13,12 +13,12 @@
 
 # fib2(500)
 
-from fibonacii import *
-fib(500)
-print(fib2(200))
+# from fibonacii import *
+# fib(500)
+# print(fib2(200))
 
-# import fiboncii as fi 
-# fi.fib(500)
+import fiboncii as fi as x
+fi.fib(500)
 
 # from fibonacii import fib as fibonacii
 # fiboncii(500)
