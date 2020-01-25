@@ -68,12 +68,12 @@
 # print('Value of x is ',x) 
 
 
-# Global function doesn't contain any argument
-# Local function contain parameters
+# # Global function doesn't contain any argument
+# # Local function contain parameters
 
 
 
-#Default Argument Values
+# Default Argument Values
 
 # def say(message, times=1):
 # 	print(message * times)
@@ -91,38 +91,71 @@
 # func(c=29,a=39)
 # func(5,6,7,8,9i)
 
-#VarArgs parameters
-#function_VarArgs.py
+# VarArgs parameters
+# function_VarArgs.py
 
-def total(a=5, *numbers, **phonebook): ## One asterisk one vari argument Two aster two VariArguments
-	print('a' , a)
+# def total(a=5, *numbers, **phonebook): ## One asterisk one vari argument Two aster two VariArguments
+# 	print('a' , a)
 
-	for single_item in numbers:
-		print('single_item' , single_item)
+# 	for single_item in numbers:
+# 		print('single_item' , single_item)
 
-	for first_part,second_part in phonebook.items():
-		print(first_part,second_part)
+# 	for first_part,second_part in phonebook.items():
+# 		print(first_part,second_part)
 
-total(10,1,2,3,Jack=1123,John=2231,Inge=1459)
+# total(10,1,2,3,Jack=1123,John=2231,Inge=1459)
 
-#Return statement
+# #Return statement
 
-def maximum(x,y)
-	if x > y:
-		return x 
-	elif x == y:
-		return 'The numbers are equal'
-	else:
-		return y
+# def maximum(x,y)
+# 	if x > y:
+# 		return x 
+# 	elif x == y:
+# 		return 'The numbers are equal'
+# 	else:
+# 		return y
 
-print(maximum(3,8))
+# print(maximum(3,8))
 
-print(maximum(20,10))
+# print(maximum(20,10))
 
 
 #Docs String
 
+def print_max(x,y):
+	'''Prints the maximum of two numbers
+		The Two values must be integers.
+	'''
+	x = int(x)
+	y = int(y)
 
+	if x > y :
+		print(x , 'is maximum')
+	elif x < y:
+		print(y , 'is maximu')
+	else:
+		print(y , 'is maximum')
+
+print_max(5,9)
+print(print_max.__doc__)
+
+
+# def paper():
+# 	'''1. There will be situations where your 
+# 	program has to interact with the user.
+# 	For example , ypu would want to take input
+# 	from the user and then print some results
+# 	back. We can achieve this using the input()
+# 	function and print function respectively.'''
+
+# 	'''2. There will be situations where your 
+# 	program has to interact with the user.
+# 	For example , ypu would want to take input
+# 	from the user and then print some results
+# 	back. We can achieve this using the input()
+# 	function and print function respectively. '''
+
+# print(paper._doc_)
 
 
 
